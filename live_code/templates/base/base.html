@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style_lc.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{%block title%}{%endblock%}</title>
+</head>
+<body>
+<!-- header starts here -->
+<div class="container-fluid">
+
+<div class="row header">
+    
+        <div class="col-md-3">
+                <div class="header-notif text-right flex-column">
+                        <div class="menu">
+                            <ul>
+                                    <a href="/""><li>Toko Online</li></a>
+                                    <a href="#"><li>Home</li></a>
+                                    <a href="/input_barang"><li>Input Barang</li></a>
+                                    
+                            </ul>
+                        </div>
+                    </div>
+        </div>
+        <div class="col-md-9">
+            
+        </div>
+    </div>
+
+
+
+<!-- header ends here -->
+</div>
+<div class="container-fluid">
+{%block content%}
+<!-- body beneran starts here -->
+<!-- body beneran ends here -->
+{%endblock%}
+</div>
+
+</body>
+</html>

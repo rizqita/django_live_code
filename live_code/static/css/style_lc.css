@@ -1,0 +1,31 @@
+.menu{
+    display: table;
+    float: left;
+    background-color: #5DBCD2 ;
+}
+.row{
+    background-color: #5DBCD2 ;
+}
+.row-isi{
+    background-color: white
+}
+.menu li{
+    display: table-cell;
+    padding-right:10px;
+    vertical-align: middle;
+    padding-top: 20px;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Muli', sans-serif;
+
+    
+}
+menu li :hover{
+    color: rgb(54, 75, 59);
+}
+.aligncenter{
+    text-align: center;
+}
+.td{
+    border-radius: 1px;
+}

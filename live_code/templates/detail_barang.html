@@ -1,0 +1,19 @@
+{%extends 'base/base.html'%}
+{%block title%}{{list_barang.nama}}{%endblock%}
+
+{%block content%}
+<div class="container">
+    <div class="row-barang">
+        <div class="col-8 text-center">
+            <img width="100%" src="{{list_barang.gambar}}">
+        </div>
+        <div class="col-8 blog-content">
+            <h3>{{list_barang.nama}}</h3>
+            <h4>Rp. {{list_barang.harga}}</h4>
+            <br>
+            <p>{{list_barang.detail}}</p>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

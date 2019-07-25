@@ -1,0 +1,56 @@
+{%extends 'base/base.html'%}
+{%block title%}Home{%endblock%}
+{%block content%}
+
+<br>
+
+<div class="row-isi">
+        <!-- <div class="col-md-4"></div> -->
+        <div class="col-md-12">
+        <div class="">
+            <!-- <h5 class="aligncenter">Product</h5> -->
+            <table>
+            <tr>
+             {%for item in list_barang|slice:":3"%}
+                    
+                <td> <img src="{{item.gambar}}"></td>
+                    
+            {%endfor%}
+                </tr>
+            <tr>
+            {%for item in list_barang|slice:":3"%}
+                    
+                <td>{{item.nama}}<br>
+                    Rp {{item.harga}}<br>
+                    <a href="{%url 'barang_detail' item.id%}">Lihat Detail</a></td>
+                   
+                    
+            {%endfor%}
+            </tr>
+            <tr>
+                    {%for item in list_barang|slice:"3:"%}
+                           
+                       <td> <img src="{{item.gambar}}"></td>
+                           
+                   {%endfor%}
+                       </tr>
+                   <tr>
+                   {%for item in list_barang|slice:"3:"%}
+                           
+                   <td>{{item.nama}}<br>
+                    Rp {{item.harga}}<br>
+                    <a href="{%url 'barang_detail' item.id%}">Lihat Detail</a></td>
+                           
+                   {%endfor%}
+                   </tr>                                         
+            </table>
+            
+            
+          
+        </div>
+    </div>
+    
+    </div>
+
+
+{%endblock%}
