@@ -26,6 +26,15 @@ menu li :hover{
 .aligncenter{
     text-align: center;
 }
-.td{
+td{
     border-radius: 1px;
+}
+table{
+    border: 1cm;
+}
+.price{
+    color: greenyellow;
+}
+.row-barang{
+    border-block-color: black;
 }
